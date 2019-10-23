@@ -1,6 +1,6 @@
 ### notes 便签
 
-https://github.com/lxchuan12/sticky-notes修改了下css
+修改了下css https://github.com/lxchuan12/sticky-notes
 
 #### TODO 功能点
 
