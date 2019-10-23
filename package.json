@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "node ./shell.js",
     "oldDev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "oldBuild": "cross-env NODE_ENV=production webpack --progress --config webpack.config.js",
@@ -60,5 +61,8 @@
     "webpack-dev-server": "^3.1.3",
     "webpack-merge": "^4.1.2",
     "webpack-parallel-uglify-plugin": "^1.1.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.3"
   }
 }
