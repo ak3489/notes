@@ -1,0 +1,93 @@
+/**
+ * @file index.css
+ * @desc 便签样式
+ * @version 0.1.2
+ * @author 轩辕Rowboat <lxchuan12@163.com>
+ * @date 2017-07-02
+ * @update 2018-05-06
+ * @copyright 2017
+ */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font:14px/1.3 "微软雅黑";
+    margin: 20px;
+    background:url('http://xs.gzui.net/img/wallhaven-132r1v.jpg') repeat;
+    background-size: 100% auto;
+}
+#create,#remove{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border-radius:2px;
+    transition: all .5s;
+}
+#create{background: #f27197;color: #fff;}
+#create:hover{
+    background: #ff3a75;
+}
+#remove:hover{
+    background: #e3e3e3;
+}
+.m-note{
+    border-radius:4px;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    width: 320px;
+    @bar-height: 35px;
+    @minHeight: 250px;
+    @maxHeight: 400px;
+    @bgc: #C4E5FF;
+    background-color: rgba(255,255,255,.9);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(142, 142, 142, 0.5);
+    .u-edit{
+        box-sizing: border-box;
+        min-height: @minHeight;
+        max-height: @maxHeight;
+        padding: 10px;
+        outline: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 20px;
+        font-family: 'microsoft yahei';
+        font-weight: 300;
+    }
+    &:hover .u-close{
+        display: block;
+    }
+    .u-bar{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        height: @bar-height;
+        background: transparent;
+    }
+    .u-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        top: 5px;
+        background: url(../assets/img/btn-close.png) no-repeat;
+        cursor: pointer;        
+    }
+    .m-time{
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        text-align: center;
+        line-height: @bar-height;
+        height: @bar-height;
+        padding:0 10px; 
+        background-color:rgba(0, 0, 0, 0.3);
+        color:#333;
+    }
+}
